@@ -21,6 +21,9 @@ Single developer workflow for easy getting started.
 * git add .
 * git commit -m "My custom message"
 * git log
+
+##Reset commits
+* git reset --soft HEAD~1 (undo last commit) 
  
 ##branching##
 * git branch
@@ -31,3 +34,9 @@ Single developer workflow for easy getting started.
 ##Remote repositories##
 * git remote add origin url
 * git push -u origin branchName
+
+##update .gitignore
+* git rm -r --cached .
+* git add .
+* git commit -m "gitignore updated"
+
