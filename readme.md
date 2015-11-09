@@ -26,6 +26,15 @@ Single developer workflow for easy getting started.
 ##Reset commits
 * git reset --soft HEAD~1 (undo last commit) 
 
+##Ammend Commits
+You may need to fix a commit in the case where you forgot to include a file or a change you may do this with the ammend argument:
+
+* git add .
+* git commit --amend (this will promp you for a commit message)
+* git commit --amend -m "Just added a little change"
+
+
+
 ##Tags
 They annotate (tag) specific points in history such a releases or any other important checkpoint. Its useful when specifying releases. Also github creates a link directly to releases as zip so other users can download the repo as a zip file.
 
