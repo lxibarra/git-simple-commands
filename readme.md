@@ -12,7 +12,7 @@ Single developer workflow for easy getting started.
 * branch per feature
 * branch per release
 
-#Basic Commands#
+##Basic Commands##
 
 * git init
 * Only first time configuration 
@@ -23,8 +23,11 @@ Single developer workflow for easy getting started.
 * git commit -m "My custom message"
 * git log
 
-##Reset commits
-* git reset --soft HEAD~1 (undo last commit) 
+##Reset,Undo, etc commits && changes
+* git checkout . (undo all non commited changes, you may also do it for specific files)
+* git reset --soft HEAD~1 (undo last commit while keeping files)
+* git reset --hard (Resets to a last commit deleting all files and changes. Its considered dangerous because it cannot be undone).
+* git reset --hard HEAD~1 (Resets to an specific commit leaving a clean directory. In this case to the last commit. Number 1 can be changed for the desire commit rollback number)
 
 ##Amend Commits
 You may need to fix a commit in the case where you forgot to include a file or a change you may do this with the ammend argument:
