@@ -5,6 +5,7 @@ Single developer workflow for easy getting started.
 * git is a local version control software which can also push/pull changes to a remote repository
 * commit is equivalent to a checkpoint 
 * branch is a separate line of code.
+
 ##Git basic workflow##
 
 * single branch
@@ -24,6 +25,20 @@ Single developer workflow for easy getting started.
 
 ##Reset commits
 * git reset --soft HEAD~1 (undo last commit) 
+
+##Tags
+They annotate (tag) specific points in history such a releases or any other important checkpoint. Its useful when specifying releases. Also github creates a link directly to releases as zip so other users can download the repo as a zip file.
+
+* git tag v1.0.0 (simple tag)
+* git tag -a v1.0.0 -m "release v1.0.0" (message must be descritive as it will show up in github pages"
+* git tag (shows existing tags)
+* git tag v1.0.0 (will show the commit of the current tag)
+* git tag -D v1.0.0 (will remove the tag)
+
+Tags are not pushed by default you have to do it manually
+
+* git push origin --tags (pushes all tags)
+* git push origin v1.0.0 (pushes only the specified tag)
  
 ##branching##
 * git branch
