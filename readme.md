@@ -14,14 +14,14 @@ Single developer workflow for easy getting started.
 
 ##Basic Commands##
 
-* git init
+* ``` git init ```
 * Only first time configuration 
-*  * git config --global user.name "John Doe"
-*  * git config --global user.email johndoe@example.com
-* git status
-* git add .
-* git commit -m "My custom message"
-* git log
+*  * ``` git config --global user.name "John Doe" ```
+*  * ``` git config --global user.email johndoe@example.com ```
+* ``` git status ``` 
+* ``` git add . ```
+* ``` git commit -m "My custom message" ```
+* ``` git log ```
 
 ##Reset,Undo, etc commits && changes
 * git checkout . (undo all non commited changes, you may also do it for specific files)
