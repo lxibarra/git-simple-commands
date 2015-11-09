@@ -26,7 +26,7 @@ Single developer workflow for easy getting started.
 ##Reset commits
 * git reset --soft HEAD~1 (undo last commit) 
 
-##Ammend Commits
+##Amend Commits
 You may need to fix a commit in the case where you forgot to include a file or a change you may do this with the ammend argument:
 
 * git add .
