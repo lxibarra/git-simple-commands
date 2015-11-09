@@ -34,6 +34,8 @@ Single developer workflow for easy getting started.
 ##Remote repositories##
 * git remote add origin url
 * git push -u origin branchName
+* git remote -v (shows current remote repositories) 
+* git remote set-url origin https://github.com/username/repo-name.git (the url is the new repo)
 
 ##update .gitignore
 * git rm -r --cached .
