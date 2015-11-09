@@ -64,6 +64,16 @@ Tags are not pushed by default you have to do it manually
 * ``` git push -u origin branchName ```
 * ``` git remote -v ``` (shows current remote repositories) 
 * ``` git remote set-url origin https://github.com/username/repo-name.git ``` (the url is the new repo)
+###Merge remote changes###
+There are different ways of doing this. The following git command wil merge remote changes but its most likely that you want to review changes first before merging, other commands are avaliable for this.
+
+* ``` git pull `` Will download all changes overwriting non conflicting files
+* ``` git pull --rebase master ``` Will download an specific branch (master in this case) and will prompt when conflicts appear. 
+* ``` git rebase --continue ``` one you have deal with the conflicts you can mark the file as fixed with ``` git add filename.ext `` and after that you execute rebase --continue to move on.
+* ``` git rebase --skip ``` as the arguments says it skips the merge.
+* ``` git rebase --abort ``` will leave the original branch as it is.
+
+
 
 ##update .gitignore
 * ``` git rm -r --cached . ```
