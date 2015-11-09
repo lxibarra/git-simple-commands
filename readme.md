@@ -34,6 +34,7 @@ They annotate (tag) specific points in history such a releases or any other impo
 * git tag (shows existing tags)
 * git tag v1.0.0 (will show the commit of the current tag)
 * git tag -D v1.0.0 (will remove the tag)
+* git push origin :refs/tags/v1.0.0 (will remove the tag remotely)
 
 Tags are not pushed by default you have to do it manually
 
