@@ -59,6 +59,9 @@ Tags are not pushed by default you have to do it manually
 * ``` git checkout myBranchName ```
 * ``` git merge nameOfBranch ```
 
+###Remove remote branches###
+* ``` git push origin --delete <branchName> ```
+
 ##Remote repositories##
 * ``` git remote add origin url ```
 * ``` git push -u origin branchName ```
