@@ -29,6 +29,11 @@ Single developer workflow for easy getting started.
 * ``` git reset --hard ``` (Resets to a last commit deleting all files and changes. Its considered dangerous because it cannot be undone).
 * ``` git reset --hard HEAD~1 ``` (Resets to an specific commit leaving a clean directory. In this case to the last commit. Number 1 can be changed for the desire commit rollback number)
 
+##Revert
+Removes commits and creates a new one without deleting history
+git revert --no-commit 0766c053..HEAD
+git commit
+
 ##Amend Commits
 You may need to fix a commit in the case where you forgot to include a file or a change you may do this with the ammend argument:
 
